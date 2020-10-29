@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>podrecznik</title>
+        <meta name="description" content="laboratoria numer 1 z przedmiotu Projektowanie serwisow WWW" />
+        <meta name="keywords" content="studia,amw,185ic" />
+        <meta name="author" content="Wojciech Latek" />
+        <link rel="stylesheet" href="stylesheet.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <p class="naglowek">Wojciech Latek - Laboratoria numer 1</p>
+        </header>
+
+        <nav>
+            <p class="menublocktextglowna"><a href="index.html">Strona glowna</a></p>
+            <P class="menublocktextlist"><a href="list.html">Strona list</a></P>
+            <P class="menublocktextpodrecznik"><a class="atm" href="podrecznik.html">Strona podrecznik</a></P>
+            <P class="menublocktextformularz"><a href ="formularz.html">Strona formularz</a></P>
+        </nav>
+
+        <section class="ad1">
+            
+        </section>
+
+        <section class="book">
+            <h1 style="color:green">Chapter 48: Stacking Context</h1>
+            <h4 style="color:green">Section 48.1: Stacking Context</h4>
+            <p>In this example every positioned element creates its own stacking context, because of their positioning and z-index
+                values. The hierarchy of stacking contexts is organized as follows:
+                </p>
+            <img src="nKKSo.png">
+            
+            <ul>
+                <li>Root</li>
+                <ul style="padding-left: 60px;">
+                    <li>DIV #1</li>
+                    <li>DIV #2</li>
+                    <li>DIV #3</li>
+                    <li>DIV #4</li>
+                    <li>DIV #5</li>
+                    <li>DIV #6</li>
+                    </ul>
+            </ul>
+            It is important to note that DIV #4, DIV #5 and DIV #6 are children of DIV #3, so stacking of those elements is
+            completely resolved within DIV#3. Once stacking and rendering within DIV #3 is completed, the whole DIV #3
+            element is passed for stacking in the root element with respect to its sibling's DIV.
+
+            <p><strong>HTML:</strong></p>
+            <img src="page11111.PNG"></img>
+            
+
+        </section>
+
+        <section class="ad2">
+            
+        </section>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

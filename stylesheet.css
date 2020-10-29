@@ -1,0 +1,207 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+p{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a.atm{
+    color: rgb(29, 56, 16);
+}
+
+p.menublocktextglowna{
+    margin-left: auto;
+    margin-right: 0px;
+    width: 10em;
+    padding: 11px;
+}
+
+p.menublocktextpodrecznik{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 10em;
+    padding: 11px;
+}
+
+p.menublocktextlist{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 10em;
+    padding: 11px;
+}
+
+p.menublocktextformularz{
+    margin-left: 0px;
+    margin-right: auto;
+    width: 10em;
+    padding: 11px;
+}
+
+p.naglowek{
+    color : white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    font-size: 30px;
+}
+
+header{
+    background-color: rgb(102, 102, 102);
+    border: none;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+nav{
+    border: 0px;
+    height: 40px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: silver;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section{
+    border: none;
+    height: 1000px;
+    padding: 0px;
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    float: left;
+}
+
+section.ad1{
+    width:252px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    float:left;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+}
+
+section.ad2{
+    width:252px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    float:right;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+}
+
+section.book{
+    padding:50px;
+    display: inline-block;
+    width:1300px;
+    margin:auto;
+}
+
+section.form_page{
+    padding:50px;
+    display: inline-block;
+    width:1300px;
+    margin:auto;
+}
+
+section.content{
+    width:1300px;
+    margin:auto;
+}
+
+footer{
+    border: none;
+    height: 40px;
+    margin: none;
+    padding: 0px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    clear:both;
+}
+
+section.user{
+    width: 400px;
+    float: left;
+}
+
+section.avatar{
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+p.userinfo{
+    color: black;
+    margin-right: 0px;
+    float:top;
+}
+
+img.avatar{
+    object-fit: cover;
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+section.description{
+    margin-left: 70px;
+    margin-right: 50px;
+    padding-right: 200px;
+    display: inline-block;
+}
+
+p.author{
+    color: black;
+    font-size: 40px;
+    float:top;
+    margin-top: 120px;
+}
+
+p.author.description{
+    color: black;
+    font-size: 12px;
+    float:top;
+    
+}
+
+div.list{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    display: legacy;
+    margin: 60px;
+    margin-top: 30px;
+    padding: 15px;
+    height:540px;
+}
