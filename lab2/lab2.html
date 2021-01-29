@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>lab2</title>
+        <meta name="description" content="laboratoria numer 1 z przedmiotu Projektowanie serwisow WWW" />
+        <meta name="keywords" content="studia,amw,185ic" />
+        <meta name="author" content="Wojciech Latek" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheetcustom.css">
+        <link rel="code" href="script.js">
+
+    </head>
+
+
+    <body>
+        <header style="padding-top: 4px;">
+            <p class="naglowek">PROJEKTOWANIE SERWISÓW WWW</p>
+        </header>
+
+        <nav>
+            
+            <div class="labmenu" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+ 
+                <button id="myBtn" class="dropbtn" >Lab1</button>
+                <div id="myDropdown" class="dropdown-content" onclick="dropDownFunction(this)">
+                    <a href="index.html">Index</a>
+                    <a href="list.html">List</a>
+                    <a href="podrecznik.html">Podrecznik</a>
+                    <a href="formularz.html">Formularz</a>
+                </div>
+            
+                <button id="myBtn" class="dropbtn"><a href="lab2.html" style="font-size:18px; text-decoration: none; color: white;">Lab2</a></button>
+            </div>
+        
+        </nav>
+
+        <section style="height: 1100px;">
+
+
+
+            <section  class="container" style="height: 840px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+
+                    <section class="col-md-3" style="padding-top: 20px; margin-top: 15px;">
+                        <div class="card text-white" style="align-items: center; margin: 5px;">
+                        <h4>CLOCK</h4>
+                        <h3 class="card-title text-center">
+                        <div class="d-flex flex-wrap justify-content-center">
+                        <a><span class="badge hours"></span></a> :
+                        <a><span class="badge min"></span></a> :
+                        <a><span class="badge sec"></span></a>
+                        </div>
+                        </h3>
+                        </div>
+                    </section>
+
+                    <section id="cont"  role="main" class="buttons">
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="location.reload();">
+
+                            Odśwież stronę
+                        </button>
+
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="openGoogle();">
+
+                            Google
+                        </button>
+
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="popUp();">
+
+                            PopUP
+                        </button>
+                        
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="changeBackgroundColor();">
+
+                            Zmień kolor tła
+                        </button>
+
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="changeFont();">
+                           
+                            Zmień czcionkę
+                        </button>
+
+
+                        <button id="higher" class="btn btn-primary" type="button" style="margin: 5px;" onclick="fontIncrease()">
+                           
+                            Zwiększ rozmiar czcionki
+                        </button>
+
+
+                        <button id="lower" class="btn btn-primary" type="button" style="margin: 5px;" onclick="fontDecrease()">
+                           
+                            Zmniejsz rozmiar czcionki
+                        </button>
+
+                        
+                        <button id="reset" class="btn btn-primary" type="button" style="margin: 5px;" onclick="fontReset()">
+                           
+                            Zresetuj rozmiar czcionki
+                        </button>
+
+
+                        <button id="catchme" class="btn btn-primary" type="button" style="margin: 5px;" onclick="catchMe();">
+
+                            Złap mnie jeśli potrafisz
+                        </button>
+                        
+
+                        <button id="niespodzianka" class="btn btn-primary" type="button" style="margin: 5px;" onclick="niespodzianka();">
+                            Niespodzianka
+                        </button>
+
+
+                        <button id="rainbow" class="btn btn-primary" type="button" style="margin: 5px;" onclick="changeTextColor();">
+                            ColorFest
+                        </button>
+
+
+                        <button id="ninja" class="btn btn-primary" type="button" style="margin: 5px;" onclick="hideBox();">
+                            Ukryj się!
+                        </button>
+
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="copyText();">
+                            <input type="text" id="pole1" value=" "><br>
+                            <input type="text" id="pole2" value=" "><br>
+                            Przepisz tekst
+                        </button>
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="countChar();" button.disabled = true>
+                            <input type="text" id="input"> <span id="count">0</span><br>
+                            Policz znaki
+                        </button>
+
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="compareNumbers()">
+                            <input type="text" id="liczba1" /><br>
+                            <input type="text" id="liczba2" />
+                            <div id="odp">  </div>
+                            Porównaj liczby
+                        </button>
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="showImg()">
+                            Pokaż zdjęcie
+                            <div id="x"></div>
+                        </button>
+
+                        <button class="btn btn-primary" type="button" style="margin: 5px;" onclick="spinImg()">
+                            Obróć zdjęcie
+                            <div id=" "></div>
+                        </button>
+
+                        <button id="hide-btn" class="btn btn-primary" type="button" style="margin: 5px;" onclick="hideFooter()">
+                            Ukryj footer
+                        </button>
+                        
+                        <i onclick="likeDislike(this)" class="fa fa-thumbs-up"></i>
+
+                </section>
+                    
+            </section>
+
+
+        </section>
+
+        <footer id="ftr">
+            AMW GDYNIA 2020/2021 WOJCIECH LATEK
+        </footer>
+    
+   
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+

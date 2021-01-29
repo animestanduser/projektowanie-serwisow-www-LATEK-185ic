@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>formularz</title>
+        <meta name="description" content="laboratoria numer 1 z przedmiotu Projektowanie serwisow WWW" />
+        <meta name="keywords" content="studia,amw,185ic" />
+        <meta name="author" content="Wojciech Latek" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheetcustom.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <p class="naglowek">PROJEKTOWANIE SERWISÓW WWW</p>
+        </header>
+
+        <nav>
+            <div class="labmenu">
+                <button id="myBtn" class="dropbtn">Lab1</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index.html">Index</a>
+                  <a href="list.html">List</a>
+                  <a href="podrecznik.html">Podrecznik</a>
+                  <a href="formularz.html">Formularz</a>
+                </div>
+
+                <button id="myBtn" class="dropbtn">Lab2</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="lab2.html">Zadania</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="form_page">
+            <h1>Formularz rejestracji</h1>
+
+            <form name='registration' onSubmit="return formValidation();">
+            <ul>
+            <li><label for="userid">ID:</label></li>
+            <li><input type="text" name="userid" size="12" /></li>
+            <li><label for="passid">Hasło:</label></li>
+            <li><input type="password" name="passid" size="12" /></li>
+            <li><label for="username">Nazwa:</label></li>
+            <li><input type="text" name="username" size="50" /></li>
+            <li><label for="address">Adres:</label></li>
+            <li><input type="text" name="address" size="50" /></li>
+            <li><label for="country">Państwo:</label></li>
+            <li><select name="country">
+            <option selected="" value="Default">(Please select a country)</option>
+            <option value="AF">Australia</option>
+            <option value="AL">Kanada</option>
+            <option value="DZ">Indie</option>
+            <option value="AS">Rosja</option>
+            <option value="AD">USA</option>
+            </select></li>
+            <li><label for="zip">Kod pocztowy:</label></li>
+            <li><input type="text" name="zip" /></li>
+            <li><label for="email">Email:</label></li>
+            <li><input type="text" name="email" size="50" /></li>
+            <li><label id="gender">Płeć:</label></li>
+            <li><input type="radio" name="msex" value="Male" /><span>mężczyzna</span></li>
+            <li><input type="radio" name="fsex" value="Female" /><span>kobieta</span></li>
+            <li><label>Język:</label></li>
+            <li><input type="checkbox" name="en" value="en" checked /><span>Angielski</span></li>
+            <li><input type="checkbox" name="nonen" value="noen" /><span>Inny niż angielski</span></li>
+            <li><label for="desc">Opis:</label></li>
+            <li><textarea name="desc" id="desc"></textarea></li>
+            <li><input type="submit" name="submit" value="Submit" /></li>
+            </ul>
+            </form>
+
+        </section>
+
+
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

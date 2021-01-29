@@ -1,0 +1,293 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125em;
+}
+
+
+p{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+a.atm{
+    color: rgb(208, 225, 249);
+}
+
+p.menublocktextglowna{
+    margin-left: auto;
+    margin-right: 0px;
+    width: 10em;
+    padding: 11px;
+}
+
+p.menublocktextpodrecznik{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 10em;
+    padding: 11px;
+}
+
+p.menublocktextlist{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 10em;
+    padding: 11px;
+}
+
+p.menublocktextformularz{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 10em;
+    padding: 11px;
+}
+
+p.menublocktextlab2{
+    margin-left: 0px;
+    margin-right: auto;
+    width: 10em;
+    padding: 11px;
+}
+
+
+p.naglowek{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    font-size: 30px;
+    color: white;
+}
+
+header{
+    background-color: rgb(30, 31, 38);
+    height: 50px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 150px #777777;
+}
+
+nav{
+    border: 0px;
+    height: 40px;
+    margin: 0px;
+    padding-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    display: flex;
+    background-color: rgb(40, 54, 85);
+    align-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+section{
+    border: none;
+    padding: 0px;
+}
+
+section.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 243, 253);
+}
+
+
+section.book{
+    padding:50px;
+    height: 100%;
+    width: 100%;
+}
+
+section.form_page{
+    padding:50px;
+    width:100%;
+    height: 100%;
+}
+
+section.tasks{
+    height: 30px;
+    width: auto;
+    margin: 0px;
+    border: 0px;
+}
+
+footer{
+    border: none;
+    height: 40px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 7px;
+    text-align: center;
+}
+
+
+section.user{
+    width: 400px;
+}
+
+section.avatar{
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgb(208, 225, 249);
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+p.userinfo{
+    color: black;
+    margin-right: 0px;
+    float:top;
+}
+
+img.avatar{
+    object-fit: cover;
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+section.description{
+    margin-left: 70px;
+    margin-right: 50px;
+    padding-right: 200px;
+    display: inline-block;
+}
+
+p.author{
+    font-size: 40px;
+    float:top;
+    margin-top: 120px;
+}
+
+p.author.description{
+    font-size: 12px;
+    float:top;
+}
+
+div.list{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    display: legacy;
+    margin: 60px;
+    margin-top: 30px;
+    padding: 15px;
+    height:540px;
+}
+
+.btn{
+    background-color: rgb(102, 109, 122);
+}
+
+div.card{
+    background-color: rgb(102, 109, 122);
+    box-shadow: 0 0 10px #777777;
+}
+
+section.col-md-3{
+    background-color: rgb(242, 243, 253);
+    margin: auto;
+}
+
+section.buttons{
+    background-color: rgb(242, 243, 253); ;
+    padding: 15px;
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+.langar{
+
+    font-family: 'Langar', cursive;
+}
+
+.sans{
+
+    font-family: 'Work Sans', sans-serif;
+}
+
+#cont{
+    background-color: #F0F0F1;
+    margin: 64px 64px 64px 64px;
+    padding: 10px;
+    height: 600px;
+    border: 5px solid  rgb(40, 54, 85);
+    overflow: auto;
+    box-shadow: 0 0 10px #777777;
+}
+
+
+
+
+
+.labmenu .dropbtn {
+    color: white;
+    background-color: rgb(40, 54, 85);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-left: 2px;
+    padding:2px
+  }
+  
+  .labmenu .dropbtn:hover, .dropbtn:focus {
+    background-color: #8f83ff;
+    padding: 5px;
+  }
+  
+  .labmenu {
+    align-items: center;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+  .show {display:block;}
+
+button#increasetext {
+	font-size: 1.50em;
+}
+
+button#decreasetext {
+	font-size: 1.125em;
+}
+
+.rotated-image {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
